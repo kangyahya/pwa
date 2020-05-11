@@ -1,0 +1,23 @@
+{
+  "name": "The First Submission",
+  "short_name": "submission",
+  "start_url": "index.html",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  
+  "icons": [
+  {
+   "src": "\/favicon/android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image\/png",
+   "density": "4.0"
+  },
+  {
+   "src": "\/favicon/android-icon-512x512.png",
+   "sizes": "560x560",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}

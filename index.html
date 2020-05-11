@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IT Cirebon</title>
+
+    <meta name="description" content="Submission first MPWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/it-logoo.png">
+    <link rel="icon" type="image/ico" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="fonts/material-icons.css">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#00897B" />
+  </head>
+  <body>
+
+  <!-- Navigasi -->
+  <header id="header" class="page-topbar">
+    <div class="navbar">
+      <nav class="navbar-color gradient-45deg-light-blue-cyan" role="navigation">
+        <div class="nav-wrapper container">
+          <ul class="left">
+            <li>
+              <h1 class="logo-wrapper">
+                <a href="index.html" class="brand-logo darken-1">
+                    <img src="img/it-logoo.png" alt="it logo">
+                    <span class="logo-text hide-on-med-and-down">Cirebon</span>
+                  </a>
+              </h1>
+            </li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger tn-floating btn-medium waves-effect waves-light hide-on-large-only"><span class="material-icons">menu</span></a>
+
+          <ul class="topnav right hide-on-med-and-down"></ul>
+          <ul id="nav-mobile" class="sidenav"></ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Akhir Navigasi -->
+  <div class="content">
+    <div class="body-content container"></div>
+  </div>
+  <footer class="page-footer gradient-45deg-light-blue-cyan">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Copyright ©
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> <a class="grey-text text-lighten-2" href="#" target="_blank">Submission 1<sup>st</sup></a> All rights reserved.</span>
+          <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="http://yahya.rtikcirebon.id">Kang Yahya</a></span>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+  // REGISTER SERVICE WORKER
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js')
+      .then(function() {
+        console.log('Pendaftaran ServiceWorker berhasil');
+      })
+      .catch(function(){
+        console.log('Pendaftaran ServiceWorker gagal');
+      });
+    })
+  } else {
+    console.log("ServiceWorker belum didukung browser ini.")
+  }
+
+
+      $(document).ready(function() {
+        $(".carousel-slider").carousel({
+          fullWidth: true
+        });
+      });
+
+  </script>
+</body>
+</html>
